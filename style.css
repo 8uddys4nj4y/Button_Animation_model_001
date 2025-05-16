@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #0c0c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+#branchCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.button-container {
+  position: relative;
+  z-index: 2;
+}
+
+.glow-button {
+  padding: 20px 40px;
+  font-size: 1.3rem;
+  background: linear-gradient(135deg, #00f0ff, #1affb3);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00ffee;
+  transition: transform 0.3s;
+}
+
+.glow-button:hover {
+  transform: scale(1.1);
+}
